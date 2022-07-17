@@ -1,164 +1,85 @@
-.nav-link{
-  color: #000000;
-  font-weight: bold;
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter&family=Roboto:wght@300;400&display=swap");
+
+/* NAVBAR */
+
+.navigationWrapper {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #143d64;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  color: wheat;
+  text-transform: uppercase;
+  overflow: hidden;
 }
 
-.welcome{
-  height: 68vh;
-  background-color: #97BADA;
+.logoWrapper {
+  display: flex;
 }
 
-.title{
-  font-family: 'Inter';
+.navigation {
+  display: flex;
+  list-style-type: none;
+}
+.parent {
+  opacity: 1;
+  list-style-type: none;
+  color: wheat;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.parent {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  color: wheat;
+}
+.link:hover {
+  color: #ea4f4c;
+}
+
+.link {
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+
+/* HEADINGS */
+.heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #0b2946;
+  padding: 0.8rem;
+}
+
+.title {
+  font-family: "Inter";
   padding: 5%;
-  background: #97BADA;
+  background: #97bada;
 }
 
-.title-heading{
+.title-heading {
   padding-bottom: 0.5rem;
 }
 
-h1{
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: white;
-}
+/* SIDEBAR */
 
-h1 span{
-  color: black;
-}
-
-h2{
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-h5{
-  font-size: 1.5rem;
-  color: white;
-}
-
-.box{
-  width: 438px;
-  height: 280px;
-  background: #4683BB;
-  position: absolute;
-}
-
-.box2{
-  position: relative;
-  width: 421px;
-  height: 285px;
-  /* background: #D9D9D9; */
-  transform: rotate(10deg);
-}
-.box2:hover{
-  transition: all .3s ease-in-out 0s;
-  transform: rotate(0deg);
-  box-shadow: -26px 53px 86px rgba(0, 0, 0, 0.25);
-}
-
-@media screen and (max-width: 991px){
-  .values{
-    background:#97BADA;
-    padding: 5%;
-    height: auto;
-    background-image: none;
-    background-size: cover;
-  }
-  .boxes{
-    display: none;
-  }
-
-  .welcome{
-    height: 48vh;
-    background-color: #97BADA;
-  }
-}
-
-.values{
-  background:#97BADA;
-  background-image: url(images/backgrounds/ourvaluebg.png);
-  background-size: cover;
-  background-position: center;
-  /* height: 100vh; */
-  height: 100%;
-  padding: 5%;
-}
-
-.values-columns{
-  padding: 20px;
-}
-
-.features{
-  padding: 5%;
-}
-
-.feature-container{
-  padding: 2%;
-}
-
-.feature1{
-  background: #5FB2FF;
-  margin-bottom: 1%;
-}
-
-.feature2{
-  background: #0B8AFF42;
-  margin-bottom: 1%;
-}
-
-.feature3{
-  background: #6CCAFF42;
-  margin-bottom: 1%;
-}
-
-.feature4{
-  background: #D9F1FF;
-  margin-bottom: 1%;
-}
-
-.feature5{
-  background: #BFE0FF;
-  margin-bottom: 1%;
-}
-
-.feature6{
-  background: #5FB2FF;
-  margin-bottom: 1%;
-}
-
-.playlist{
-  background: #97BADA;
-  padding: 5%;
-}
-
-.playlist-column{
-  padding: 2%;
-}
-
-.playlist-container{
-  text-align: center;
-}
-
-.playlist-button{
-  background: #FF0000;
-  border: none;
-}
-
-.playlist-button:hover{
-  background: #FF0000;
-}
-
-.team{
-  padding: 5%;
-}
-
-.sidebar{
+.sidebar {
   list-style-type: none;
   text-align: center;
   box-sizing: border-box;
-  background: rgba(195, 191, 191, 0.3);
+  background: #143d64;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   width: 70px;
@@ -172,32 +93,26 @@ h5{
   padding: 1.5rem;
 }
 
-.hyperlinks{
-  list-style-type: none;
-  text-align: center;
-  box-sizing: border-box;
-  position: fixed;
-  width: 223px;
-  height: 282px;
-  background: rgba(196, 191, 191, 0.35);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  right: 0;
-  top: 33%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem;
-}
+/*  INDEX HTML LOADING */
 
-.hyperlinks a{
-  font-family: 'Inter';
-  font-size: 25px;
-  text-decoration: none;
-  color: #000000;
-}
-
-#myclass{
+#myclass {
   display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .values {
+    background: #97bada;
+    padding: 5%;
+    height: auto;
+    background-image: none;
+    background-size: cover;
+  }
+  .boxes {
+    display: none;
+  }
+
+  .welcome {
+    height: 48vh;
+    background-color: #97bada;
+  }
 }

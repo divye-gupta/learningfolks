@@ -1,9 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Comfortaa&family=Inter&family=Quicksand&family=Roboto:wght@300;400&display=swap');
+
+.maincontent{
+  background-color: #97BADA;
+  height: 100%;
+}
+
+
+/* TOP */
+.welcome{
+  height: 55vh;
+  background-color: #97BADA;
+}
+.boxes{
+  width: 438px;
+  height: 280px;
+  background: #4683BB;
+  position: absolute;
+  right: 2vw;
+}
+.box2{
+  position: relative;
+  width: 421px;
+  height: 285px;
+  /* background: #D9D9D9; */
+  transform: rotate(10deg);
+}
+.box2:hover{
+  transition: all .3s ease-in-out 0s;
+  transform: rotate(0deg);
+  box-shadow: -26px 53px 86px rgba(0, 0, 0, 0.25);
+}
+
+.quote{
+  padding: 0.8rem;
+  color: white;
+  font-family: 'Adamina', serif;
+}
+.mission{
+  padding: 0.8rem;
+  color: #0b2946;
+  font-size: larger;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* CONTACT */
 .contact{
     display: flex;
     justify-content: space-around;
     margin: 5rem;
     margin-bottom: 10rem;
 }
+
 
 /* BUTTON */
 .contact button {
@@ -33,7 +81,7 @@
     min-width: calc(300px + 12px);
     min-height: calc(60px + 12px);
     border: 6px solid #2796ff;
-    box-shadow: 0 0 60px #5FB2FF;
+    box-shadow: 0 0 60px #5f7fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -86,7 +134,7 @@
 
   /* FEATURES HOVER */
   .feature1:hover{
-    box-shadow: 0 0 20px #5FB2FF;
+    box-shadow: 0 0 20px #BFE0FF;
     font-size: large;
     padding: 0.3rem;
     transition: all .2s ease-in-out 0s;
@@ -98,13 +146,13 @@
     transition: all .2s ease-in-out 0s;
   }
   .feature3:hover{
-    box-shadow: 0 0 20px rgba(108, 201, 255, 0.764);
+    box-shadow: 0 0 20px #BFE0FF;
     font-size: large;
     padding: 0.3rem;
     transition: all .2s ease-in-out 0s;
   }
   .feature4:hover{
-    box-shadow: 0 0 20px #D9F1FF;
+    box-shadow: 0 0 20px #BFE0FF;
     font-size: large;
     padding: 0.3rem;
     transition: all .2s ease-in-out 0s;
@@ -116,12 +164,26 @@
     transition: all .2s ease-in-out 0s;
   }
   .feature6:hover{
-    box-shadow: 0 0 20px #5FB2FF;
+    box-shadow: 0 0 20px #BFE0FF;
     font-size: large;
     padding: 0.3rem;
     transition: all .2s ease-in-out 0s;
   }
 
+  /* OUR VALUES */
+  .values{
+    background:#97BADA;
+    background-image: url(../images/backgrounds/ourvaluebg.png);
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+    height: 100%;
+    padding: 5%;
+  }
+  
+  .values-columns{
+    padding: 20px;
+  }
 
   /* VALUE IMAGES */
   .valueimg img{
@@ -144,6 +206,54 @@
     box-shadow: -20px 50px 67px #95c2d8;
     border-radius: 20px;
   }
+
+/* FEATURES */
+
+  .features{
+    padding: 5%;
+    background-color: #97BADA;
+  }
+  
+  .feature-container{
+    padding: 2%;
+  }
+  
+  .feature1{
+    background: #5FB2FF;
+    margin-bottom: 1%;
+  }
+  
+  .feature2{
+    background: #0B8AFF42;
+    margin-bottom: 1%;
+  }
+  
+  .feature3{
+    background: #6CCAFF42;
+    margin-bottom: 1%;
+  }
+  
+  .feature4{
+    background: #D9F1FF;
+    margin-bottom: 1%;
+  }
+  
+  .feature5{
+    background: #BFE0FF;
+    margin-bottom: 1%;
+  }
+  
+  .feature6{
+    background: #5FB2FF;
+    margin-bottom: 1%;
+  }
+  
+
+
+
+
+
+
 
 
   @media screen and (max-width: 991px){

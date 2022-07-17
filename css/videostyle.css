@@ -6,3 +6,25 @@
     transition: all .3s ease-in-out 0s;
     box-shadow: -6px 3px 30px rgba(0, 0, 0, 0.25);
 }
+
+.playlist{
+    background: #97BADA;
+    padding: 5%;
+  }
+  
+  .playlist-column{
+    padding: 2%;
+  }
+  
+  .playlist-container{
+    text-align: center;
+  }
+  
+  .playlist-button{
+    background: #FF0000;
+    border: none;
+  }
+  
+  .playlist-button:hover{
+    background: #FF0000;
+  }
