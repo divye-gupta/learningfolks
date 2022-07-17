@@ -1,4 +1,4 @@
-.sumbtn{
+.sumbtn button{
     min-width: 30px;
     min-height:10px;
     font-family: 'Nunito', sans-serif;
@@ -19,7 +19,7 @@
     padding: 10px;
 }
 
-.sumbtn::before {
+.sumbtn button::before {
     content: '';
     border-radius: 1000px;
     min-width: calc(110px + 12px);
@@ -34,17 +34,17 @@
     transition: all .3s ease-in-out 0s;
   }
   
-  .sumbtn:hover, .sumbtn:focus {
+  .sumbtn button:hover, .sumbtn button:focus {
     color: #313133;
     transform: translateY(-6px);
 
   }
   
-  button:hover::before, button:focus::before {
+  .sumbtn button:hover::before, .sumbtn button:focus::before {
     opacity: 1;
   }
   
-  button::after {
+  .sumbtn button::after {
     content: '';
     width: 10px; height: 10px;
     border-radius: 100%;
@@ -56,7 +56,7 @@
     animation: ring 1.5s infinite;
   }
   
-  button:hover::after, button:focus::after {
+  .sumbtn button:hover::after, .sumbtn button:focus::after {
     animation: none;
     display: none;
   }
