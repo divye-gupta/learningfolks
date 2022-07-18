@@ -10,6 +10,7 @@
 .playlist{
     background: #97BADA;
     padding: 5%;
+    height: 100vh;
   }
   
   .playlist-column{
