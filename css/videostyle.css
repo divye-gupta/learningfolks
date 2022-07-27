@@ -10,7 +10,7 @@
 .playlist{
     background: #97BADA;
     padding: 5%;
-    height: 100vh;
+    /* height: 100vh; */
   }
   
   .playlist-column{
@@ -28,4 +28,20 @@
   
   .playlist-button:hover{
     background: #FF0000;
+  }
+
+  .row{
+    text-align: center;
+  }
+
+  iframe{
+    width: 450px;
+    height: 315px;
+  }
+
+  @media screen and (max-width: 550px){
+    iframe{
+      width: 300px;
+      height: 200px;
+    }
   }
