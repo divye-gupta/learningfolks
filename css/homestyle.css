@@ -9,7 +9,7 @@
 
 /* TOP */
 .welcome{
-  height: 55vh;
+  /* height: 55vh; */
   background-color: #97BADA;
 }
 .boxes{
@@ -48,6 +48,7 @@
 .contact{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 5rem;
     margin-bottom: 10rem;
 }
@@ -248,6 +249,11 @@
     background: #5FB2FF;
     margin-bottom: 1%;
   }
+  .feature{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+  }
   
 
 
@@ -261,12 +267,51 @@
     .boxes{
       display: none;
     }
-    .contact{
-        display: block;
-        
-    }
     /* OUR VALUES */
     .col{
         margin: 1rem;
+    }
+    .feature{
+      text-align: center;
+      font-weight: bold;
+      font-size: large;
+      padding: 0.3rem;
+      margin-bottom: 2%;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .valueimg img{
+      width: 25rem;
+    }
+    
+    .whatsapp{
+      text-align: center;
+      display: block;
+    }
+  }
+
+  @media  screen and (max-width: 600px) {
+    .contact{
+      text-align: center;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 550px){
+    .contact button{
+      min-width: 200px;
+    }
+    .valueimg img {
+      width: 20rem;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    .valueimg img{
+      width: 15rem;
+    }
+    .contact button{
+      min-width: 175px;
     }
   }

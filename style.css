@@ -3,7 +3,7 @@
 /* NAVBAR */
 
 .navigationWrapper {
-  width: 100vw;
+  /* width: 100vw; */
   position: relative;
   display: flex;
   align-items: center;
@@ -99,6 +99,24 @@
   display: none;
 }
 
+@media screen and (max-width: 550px){
+  .navigation{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .heading{
+    font-size: 2rem;
+  }
+  .navigationWrapper{
+    width: 100%;
+  }
+  .sidebar{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .values {
     background: #97bada;
@@ -107,12 +125,9 @@
     background-image: none;
     background-size: cover;
   }
-  .boxes {
-    display: none;
-  }
 
   .welcome {
-    height: 48vh;
+    /* height: 48vh; */
     background-color: #97bada;
   }
 }
